@@ -13,7 +13,7 @@ public class ConcreteDecorator extends Decorator{
         System.out.println("extraBehavior!");
     }
 
-    public void operarion(){
+    public void operation(){
         super.operation();
         extraBehavior();
     }
