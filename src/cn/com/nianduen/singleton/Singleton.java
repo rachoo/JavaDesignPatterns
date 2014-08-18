@@ -1,4 +1,4 @@
-package cn.com.nianduen.sinleton;
+package cn.com.nianduen.singleton;
 
 /**
  * Created by rachoochen on 8/14/14.
