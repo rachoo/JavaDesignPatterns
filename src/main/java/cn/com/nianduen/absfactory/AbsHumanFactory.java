@@ -5,6 +5,6 @@ package cn.com.nianduen.absfactory;
  */
 public abstract class AbsHumanFactory {
 
-    public abstract Human createHuman(Class<? extends Human> c);
+    public abstract <T extends Human> T createHuman(Class<T> c);
 
 }

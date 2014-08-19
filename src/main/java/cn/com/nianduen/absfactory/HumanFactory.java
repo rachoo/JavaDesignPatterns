@@ -6,14 +6,13 @@ package cn.com.nianduen.absfactory;
 public class HumanFactory extends AbsHumanFactory {
 
     @Override
-    public Human createHuman(Class<? extends Human> c) {
-        Human human = null;
+    public <T extends Human> T createHuman(Class<T> c) {
+        T human = null;
         try {
-            human = (Human) Class.forName(c.getName()).newInstance();
+            human = (T) Class.forName(c.getName()).newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }
         return human;
     }
-
 }

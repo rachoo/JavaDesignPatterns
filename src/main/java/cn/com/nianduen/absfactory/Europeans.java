@@ -3,7 +3,7 @@ package cn.com.nianduen.absfactory;
 /**
  * Created by rachoochen on 8/19/14.
  */
-public class Europeans implements Human{
+public class Europeans extends Human{
 
     @Override
     public void getColor() {
